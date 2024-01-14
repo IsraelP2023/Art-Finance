@@ -1,0 +1,127 @@
+body {
+    font-family: 'Montserrat', Bold;
+    line-height: 1.6;
+    background-color: #1d1b1b;
+    color: #e2e0e0;
+    overflow-x: hidden;
+    
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Img/futuristic-background.png') no-repeat center center / cover;
+    z-index: -1;
+    opacity:0.1;
+    animation: moveBackground 30s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+header, footer {
+    background-color: #333;
+    color: #d7d5d5;
+    text-align: center;
+    padding: 0em 0;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007bff, 0 0 40px #007bff; }
+    to { text-shadow: 0 0 20px #fff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff; }
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #322d2d2f;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #ede5e5e5;
+    transform: scale(0.98);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    opacity:80%;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+h2, p {
+    margin-bottom: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 0 10px
+#007bff, 0 0 20px #007bff;
+}
+
+footer p {
+font-size: 0.8em;
+position: relative;
+z-index: 1;
+}
+
+footer::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(45deg, #007bff, #1d1b1b);
+opacity: 0.7;
+z-index: -1;
+}
+
+ul li a:hover,
+ul li a:active {
+color: #0056b3;
+text-shadow: 0 0 5px #007bff, 0 0 10px #007bff;
+}
+
+c
