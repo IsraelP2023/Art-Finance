@@ -46,6 +46,30 @@ header h1 {
     from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007bff, 0 0 40px #007bff; }
     to { text-shadow: 0 0 20px #fff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff; }
 }
+.navigation ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.navigation ul li {
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    text-decoration: none; 
+    color: #fff; 
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: #007bff; 
+    text-shadow: 0 0 5px #007bff, 0 0 10px #007bff;
+}
+
 
 section {
     margin: 20px 0;
@@ -56,6 +80,15 @@ section {
     transform: scale(0.98);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     opacity:80%;
+    .proyecto video {
+        display: block;
+        margin: 0 auto;
+    }
+    .proyecto video {
+        width: 640px;
+        height: 480px;
+    }
+    
 }
 
 section:hover {
@@ -124,4 +157,3 @@ color: #0056b3;
 text-shadow: 0 0 5px #007bff, 0 0 10px #007bff;
 }
 
-c
